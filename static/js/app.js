@@ -3,17 +3,28 @@ function createGrid(grid_size) {
         var new_column = document.createElement('div');
         new_column.classList.add('column');
         new_column.setAttribute('id', `column${i}`)
-
         for (let j = 0; j < grid_size; j++) {
             var new_cell = document.createElement('div');
             new_cell.classList.add('cell');
             new_cell.setAttribute('id', `${i},${j}`);
             new_column.appendChild(new_cell);
         }
-
         document.getElementById('appContainer').appendChild(new_column);
     }
 }
 
-let grid_size = 10;
+function removeGrid() {
+    const grid = document.getElementById('appContainer');
+    while (grid.firstChild) {
+        grid.removeChild(grid.lastChild);
+    }
+}
+
+function createEventListeners() {
+    const cells = document.querySelectorAll('.cell');
+    cells.forEach(cell => cell.addEventListener('mouseover', function () { console.log(this) }));
+}
+
+let grid_size = 100;
 createGrid(grid_size);
+createEventListeners();
