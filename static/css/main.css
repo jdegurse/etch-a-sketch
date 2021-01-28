@@ -1,13 +1,28 @@
+main {
+    margin: 2vmin;
+}
 
-.center-me {
-    margin: 0 auto;
+/* CONTROLS */
+
+#control-above {
+    width: 75vmin;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#control-below {
+    width: 75vmin;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /* APP STYLE */
 
 #appContainer {
-    width: 75vw;
-    height: 75vw;
+    width: 75vmin;
+    height: 75vmin;
+    margin-top: 2vmin;
+    margin-bottom: 2vmin;
     border: 1px solid black;
     display: flex;
     flex-direction: row;
@@ -20,6 +35,11 @@
 }
 
 .cell {
-    border: 1px solid black;
     flex-grow: 1;
+}
+
+/* STYLE CLASSES */
+
+.center-me {
+    margin: 0 auto;
 }

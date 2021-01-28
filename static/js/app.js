@@ -1,3 +1,9 @@
+function newGrid(grid_size) {
+    removeGrid()
+    createGrid(grid_size)
+    createEventListeners()
+}
+
 function createGrid(grid_size) {
     for (let i = 0; i < grid_size; i++) {
         var new_column = document.createElement('div');
@@ -22,9 +28,13 @@ function removeGrid() {
 
 function createEventListeners() {
     const cells = document.querySelectorAll('.cell');
-    cells.forEach(cell => cell.addEventListener('mouseover', function () { console.log(this) }));
+    cells.forEach(cell => cell.addEventListener('mouseover', changeColor));
 }
 
-let grid_size = 100;
+function changeColor() {
+    this.style.backgroundColor = "rgb(0, 0, 0)";
+}
+
+let grid_size = 10;
 createGrid(grid_size);
 createEventListeners();
