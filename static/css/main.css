@@ -1,5 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 main {
     margin: 2vmin;
+}
+
+h1 {
+    color: white;
+    font-size: 5vmin;
+    font-family: 'Courgette', cursive;
+}
+
+p {
+    color: black;
+    font-size: 1.5vmin;
+    margin: 0;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: orangered;
+}
+
+body {
+    background-color: rgb(252, 232, 204);
+}
+
+header {
+    background-color: orange;
+    height: 6vmin;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 6vmin;
+    border-bottom: 1px solid black;
+}
+
+button:hover {
+    color:orangered;
+    border: 1px solid orangered;
+}
+
+button:active {
+    box-shadow: 0px 0px 10px -4px black inset;
+}
+
+footer {
+    background-color: orange;
+    height: 3vmin;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 3vmin;
+    border-top: 1px solid black;
+    position: fixed;
+    bottom: 0;
 }
 
 /* CONTROLS */
@@ -16,16 +76,70 @@ main {
     justify-content: space-evenly;
 }
 
+.btn-control {
+    background-color: rgb(235, 233, 233);
+    color: black;
+    width: 150px;
+    margin: 0;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.btn-color-select {
+    height: 3vmin;
+    width: 5vmin;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+#btn-color-white {
+    background-color: white;
+}
+
+#btn-color-black {
+    background-color:black;
+}
+
+#btn-color-black:active {
+    box-shadow: 0px 0px 10px -4px white inset;
+}
+
+#btn-color-red {
+    background-color:red;
+}
+
+#btn-color-green {
+    background-color: green;
+}
+
+#btn-color-blue {
+    background-color: blue;
+}
+
+#btn-color-rainbow {
+    background-image: linear-gradient(to right, red, yellow, green, blue, purple);
+}
+
+#btn-color-greyscale {
+    background-image: linear-gradient(to right, black, white);
+}
+
 /* APP STYLE */
 
 #appContainer {
+    background-color: white;
     width: 75vmin;
     height: 75vmin;
     margin-top: 2vmin;
     margin-bottom: 2vmin;
     border: 1px solid black;
+    border-radius: 2px;
     display: flex;
     flex-direction: row;
+    box-shadow: 0px 0px 20px 1px black;
 }
 
 .column {
@@ -42,4 +156,8 @@ main {
 
 .center-me {
     margin: 0 auto;
+}
+
+.no-select {
+    user-select: none;
 }

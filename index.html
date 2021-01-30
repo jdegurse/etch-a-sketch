@@ -14,17 +14,31 @@
 
 <body>
 
+<header>
+    <h1 class="no-select">Etch-a-Sketch</h1>
+</header>
+
 <main>
     <div id="control-above" class="center-me">
-        <button id="btn-new-grid">New Canvas</button>
-        <button id="btn-grid-size">Canvas Size:&nbsp;</button>
+        <button class="btn-control" id="btn-new-grid">New Canvas</button>
+        <button class="btn-control" id="btn-grid-size">Canvas Size:&nbsp;</button>
 
     </div>
     <div id="appContainer" class="center-me"></div>
     <div id="control-below" class="center-me">
-        Helloooo
+        <button class="btn-color-select" id="btn-color-white"></button>
+        <button class="btn-color-select" id="btn-color-black"></button>
+        <button class="btn-color-select" id="btn-color-red"></button>
+        <button class="btn-color-select" id="btn-color-green"></button>
+        <button class="btn-color-select" id="btn-color-blue"></button>
+        <button class="btn-color-select" id="btn-color-rainbow"></button>
+        <button class="btn-color-select" id="btn-color-greyscale"></button>
     </div>
 </main>
+
+<footer>
+    <p>Created by <a href="https://www.github.com/jdegurse/">James DeGurse</a> for the <a href="https://www.theodinproject.com/">Odin Project</a></p>
+</footer>
 
 
 <script src="static/js/app.js"></script>
